@@ -18,10 +18,10 @@ public class MyVaadinApplication extends UI {
 
     @Override
     public void init(VaadinRequest request) {
-
         HorizontalLayout layout = new HorizontalLayout();
         setContent(layout);
         setTheme("Light");
+        setCaptionAsHtml(true);
         try {
             layout.addComponent(createInputFilds());
             layout.addComponent(tTable.getTtable());

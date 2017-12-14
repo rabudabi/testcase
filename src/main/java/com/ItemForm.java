@@ -106,6 +106,7 @@ class ItemForm {
         return nodes_name;
     }
     void clearNodeList(){
+        ns.removeAllItems();
         ns.clear();
     }
 

@@ -38,7 +38,7 @@ class NodeForm {
         Button buttonAdd = new Button("Добавить");
         buttonAdd.addClickListener((Button.ClickEvent clickEvent) -> {
                 try {
-                    if((!(dbNodeService.chekItem(name)))&& (name != null)){
+                    if((!(dbNodeService.chekNode(name)))&& (name != null)){
                         long id = dbNodeService.addNode(name);
                         tTable.addNode(name, id);
                         itemForm.updateNodeList(name);
